@@ -1,0 +1,327 @@
+
+body{
+  margin: 0px;
+  font-size: 1em;
+}
+
+.top-header {
+  background-image: url("../images/image1.jpg");
+  height: 700px;
+  background-position: left;
+  background-size: cover;
+  padding: 0px 30px;
+  position: relative;
+}
+
+.background-hover{
+  background: #fdabab2e;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+h2{
+  margin: 0px;
+  font-family: sans-serif;
+}
+p{
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.container{
+  width: 1170px;
+  margin: auto;
+  position: relative;
+}
+
+.menu-container {
+  display:inline-flex;
+ justify-content: center;
+ flex-direction: row;
+ align-items:flex-start;
+}
+
+.logo-parent{
+  margin-right: 80px;
+  color: white;
+}
+
+.logo{
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.line-container {
+  display:inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ffffff;
+}
+
+
+nav ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ }
+nav ul a {
+ margin-left:60px;
+ font-size: 18px;
+ padding: 10px 20px;
+ border-radius: 50px;
+ transition: 0.5s all ease-out;
+ }
+ nav ul a:first-child{
+   margin-left: 0px;
+ }
+
+ nav ul a:hover{
+   background-color: white;
+   transition: 0.5s all ease-in;
+   color: #ff0000;
+ }
+
+nav ul a{
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.banner-text{
+  margin-top: 0px;
+  height: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text-inner{
+  text-align: center;
+}
+
+.banner-text .banner-head_text{
+  font-size: 65px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.banner-text .banner-head_subtext{
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.bridal-shower{
+  background-color: #f5e0ea;
+  padding: 60px;
+}
+
+.bridal-shower__header .bridal-shower__header-content{
+  text-align: center;
+  font-size: 35px;
+  color: #926e7f;
+}
+
+.bridal-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  margin-top: 50px;
+}
+
+.bridal-grid-single{
+  text-align: center;
+  background-color: #5f5069;
+  color: white;
+  justify-content: unset;
+  padding: 40px 15px;
+  transition: 0.4s all ease-in;
+}
+
+.bridal-grid-single:hover{
+  background-color: #840d8c;
+  transition: 0.4s all ease-out;
+}
+
+.bridal-grid-single .bridal-grid-single__header{
+  margin-bottom: 20px;
+}
+.bridal-grid-single .bridal-grid-single__content{
+  line-height: 1.6;
+}
+
+.gallery-section{
+  background-color: #fff3ff;
+}
+
+.gallery-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  margin-top: 50px;
+}
+
+.gallery-grid-single{
+  overflow: hidden;
+}
+
+.gallery-grid-single .gallery-img{
+  width: 100%;
+  transition: 0.4s all ease-in;
+}
+
+.gallery-grid-single .gallery-img:hover{
+  transform:  scale(1.15) rotate(3deg);
+  transition: 0.4s all ease-out;
+  cursor: pointer;
+}
+
+/* Responsive screen - when the screen is less than 1200px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 1200px) {
+  .container{
+    width: auto;
+  }
+
+  .bridal-grid{
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .gallery-grid{
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* Responsive screen - when the screen is less than 500px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 500px) {
+  .container{
+    width: auto;
+  }
+
+  .bridal-grid{
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .gallery-grid{
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* for inputs, select and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* for the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* for the submit button */
+input[type=submit] {
+  background-color:#840d8c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* for the container */
+.container-contacts {
+  border-radius: 5px;
+  background-color:#5f5069;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25 */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75*/
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo-contacts{
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: normal;
+  color:white;
+}
+
+
+/* Responsive screen - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  bottom: 50px;
+  right: 30px;
+}
+#scroll_to_top img {
+  width: 25px;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #b5842b;
+  color: white;
+  text-align: center;
+}
+
+.button {
+ margin-left:0px;
+ font-size: 10px;
+ padding: 20px 30px;
+ border-radius: 50px;
+ color: black;
+ text-decoration: none;
+ font-family: sans-serif;
+ padding:10px;
+ margin:0px;
+ list-style-type:none;
+
+ }
